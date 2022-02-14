@@ -1,6 +1,6 @@
 FROM rust:slim
 
-RUN cargo install diesel_cli --no-default-features --features "postgres"
+RUN cargo install diesel_cli
 
 COPY entrypoint.sh /entrypoint.sh
 
